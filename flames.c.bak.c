@@ -25,7 +25,7 @@ while(fi[i]!='\0'){
       while(si[j]!='\0'){
       ret=checker(j);
       if(fi[i]==si[j]&&ret!=1){
-      printf(" %d %d \n",i,j);
+     // printf(" %d %d \n",i,j);
       ar[k]=j;
       ++k;
       ++i;
@@ -39,9 +39,38 @@ while(fi[i]!='\0'){
 }
 i=0;
 while(ar[i]!=69){
-printf("%d \n",ar[i]);
+//printf("%d \n",ar[i]);
 ++i;
 }
-printf("No: %d ",(fn+sn)-(i*2));
-}
+switch((fn+sn)-(i*2)){
+	case 1: 
+		printf("Sister ");
+		break;
+	case 2:
+	case 4:
+	case 7: 
+	case 9: 
+		printf("Enenmy ");
+		break;
+	case 3:
+  	case 5:
 
+  	case 14: 
+                printf("Friend ");
+		break;
+	case 6:
+	
+	case 11:
+	case 15:
+		printf("Marriage ");
+ 		break;
+	case 8:
+	case 12:
+	case 13:
+		printf("Affection ");
+		break;
+	default:
+		printf("GO find yourself ");
+}
+printf("\n");
+}
