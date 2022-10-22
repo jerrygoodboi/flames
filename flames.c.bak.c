@@ -58,6 +58,9 @@ switch((fn+sn)-(i*2)){
   	case 14: 
                 printf("Friend ");
 		break;
+	case 10:
+		printf("love <3");
+		break;
 	case 6:
 	
 	case 11:
